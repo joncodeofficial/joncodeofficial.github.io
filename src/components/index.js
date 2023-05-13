@@ -1,4 +1,4 @@
-import { ComputersCanvas, StarsCanvas } from './canvas';
+import { StarsCanvas } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -18,7 +18,6 @@ export {
   Works,
   Contact,
   CanvasLoader,
-  ComputersCanvas,
   StarsCanvas,
   Stars,
   Skills,
