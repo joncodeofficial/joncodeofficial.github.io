@@ -41,7 +41,7 @@ const Skills = () => {
   }, [window.innerWidth]);
 
   return (
-    <div>
+    <div className='relative bottom-12 pt-12'>
       <h3
         className={`${styles.sectionHeadText} mt-10 text-center font-blue`}
         data-section='about'

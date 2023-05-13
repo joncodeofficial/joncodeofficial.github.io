@@ -59,7 +59,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+            <img src={logo} alt='logo' className='w-10 h-10 object-contain' />
             <p className='text-white hidden lg:flex text-[18px] font-bold cursor-pointer'>
               Jonathan &nbsp;
               <span className='sm:block hidden'> | Fullstack Dev</span>
@@ -107,37 +107,6 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-
-          {/* <div className='sm:hidden flex flex-1 justify-end items-center'>
-            <div className='hamburger' onClick={handleMobileBtn}>
-              <span className='hamburger-bar1'></span>
-              <span className='hamburger-bar2'></span>
-              <span className='hamburger-bar3'></span>
-            </div>
-
-            <div
-              className={`${
-                !toggle ? 'hidden' : 'flex'
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl sm:border`}
-            >
-              <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 '>
-                {navLinks.map((nav) => (
-                  <li
-                    key={nav.id}
-                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                      active === nav.title ? 'text-white' : 'text-secondary'
-                    }`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
-                    }}
-                  >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div> */}
         </div>
       </nav>
     </motion.div>
