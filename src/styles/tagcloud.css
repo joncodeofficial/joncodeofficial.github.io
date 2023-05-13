@@ -1,0 +1,82 @@
+.tagcloud {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tagcloud--item {
+  width: calc(var(--size-3) * 1.25);
+  height: calc(var(--size-3) * 1.25);
+  color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: filter 0.25s cubic-bezier(0.8, -0.55, 0.2, 1.65);
+}
+
+.tagcloud--item:hover {
+  filter: drop-shadow(0 0 0.75rem var(--blue-1));
+}
+
+.tagcloud--item:nth-child(1) {
+  background-image: url('../images/html5.webp');
+}
+
+.tagcloud--item:nth-child(2) {
+  background-image: url('../images/css3.webp');
+}
+
+.tagcloud--item:nth-child(3) {
+  background-image: url('../images/js.webp');
+}
+
+.tagcloud--item:nth-child(4) {
+  background-image: url('../images/tailwind.webp');
+}
+
+.tagcloud--item:nth-child(5) {
+  background-image: url('../images/sass.webp');
+}
+
+.tagcloud--item:nth-child(6) {
+  background-image: url('../images/docker.webp');
+}
+
+.tagcloud--item:nth-child(7) {
+  background-image: url('../images/react.webp');
+}
+
+.tagcloud--item:nth-child(8) {
+  background-image: url('../images/redux.svg');
+}
+
+.tagcloud--item:nth-child(9) {
+  background-image: url('../images/git.webp');
+}
+
+.tagcloud--item:nth-child(10) {
+  background-image: url('../images/github.webp');
+}
+
+.tagcloud--item:nth-child(11) {
+  background-image: url('../images/nodejs.webp');
+}
+
+.tagcloud--item:nth-child(12) {
+  background-image: url('../images/typescript.webp');
+}
+
+.tagcloud--item:nth-child(13) {
+  background-image: url('../images/golang.webp');
+}
+
+.tagcloud--item:nth-child(14) {
+  background-image: url('../images/nextjs.webp');
+}
+
+.tagcloud--item:nth-child(15) {
+  background-image: url('../images/aws.webp');
+}
+
+.tagcloud--item:nth-child(16) {
+  background-image: url('../images/figma.webp');
+}
