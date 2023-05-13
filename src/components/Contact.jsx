@@ -158,7 +158,7 @@ const Contact = () => {
                         type='submit'
                         className='btn style-p'
                         style={{
-                          '--btn-bgc': '#12122a',
+                          '--btn-bgc': '#050816',
                           '--btn-clr': '#e1148b',
                         }}
                       >

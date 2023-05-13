@@ -1,6 +1,6 @@
 :root {
   --primary-color: #050816;
-  --secondary-color: #0e0e22ff;
+  --secondary-color: #151030;
   --tertiary-color: #363959;
   --blue-1: #00a2f2;
   --blue-2: #0d8ece;
@@ -528,7 +528,7 @@ html {
 
 .contact {
   max-width: 1000px;
-  width: 92.5%;
+  width: 100%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
