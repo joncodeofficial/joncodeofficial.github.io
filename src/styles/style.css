@@ -505,6 +505,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .box {
@@ -534,7 +536,8 @@ html {
   margin-left: auto;
   padding: 1.5rem;
   background: var(--secondary-color);
-  border-radius: 5px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .form-container {
