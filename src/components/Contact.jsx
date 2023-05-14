@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <motion.div variants={fadeIn('up', 'spring', 0.5, 0.75)}>
+    <motion.div variants={fadeIn('up', 'spring', 0.4, 0.75)}>
       <section id='contact'>
         <div className='text-center pb-4'>
           <h2
