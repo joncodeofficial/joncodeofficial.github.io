@@ -8,7 +8,7 @@ const options = {
   keep: true,
   radius: matchMedia('(min-width: 48em)').matches
     ? window.innerWidth * 0.32
-    : 240,
+    : 210,
 };
 
 const Skills = () => {
@@ -19,7 +19,7 @@ const Skills = () => {
   useEffect(() => {
     const handleResize = (mq = matchMedia('(min-width: 48em)'), options) => {
       const $sphere = document.querySelector('.sphere-container');
-      options.radius = mq.matches ? window.innerWidth * 0.32 : 240;
+      options.radius = mq.matches ? window.innerWidth * 0.32 : 210;
       $sphere.removeChild($sphere.childNodes[0]);
       window.TagCloud('.sphere-container', Array(16).fill(''), options);
       document.querySelector('.tagcloud').style.width = '100%';
