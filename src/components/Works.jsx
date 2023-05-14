@@ -7,15 +7,9 @@ import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { domain_uri, github_uri } from '../config';
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
+const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
@@ -26,21 +20,22 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full transition-transform'
       >
-        <div className='relative w-full h-[230px]'>
+        <div
+          className='relative w-full h-[230px]'
+          onClick={() => window.open(domain_uri + source_uri, '_blank')}
+        >
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl cursor-pointer'
+            className='w-full h-full object-cover rounded-2xl cursor-pointer hover:mix-blend-exclusion'
           />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'></div>
         </div>
 
         <div className='mt-5'>
           <div className='flex justify-between items-center'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <div
-              onClick={() => window.open(source_code_link, '_blank')}
+              onClick={() => window.open(github_uri + source_uri, '_blank')}
               className='black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer mr-2'
             >
               <img

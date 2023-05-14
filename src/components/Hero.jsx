@@ -26,9 +26,8 @@ const Hero = () => {
                 data-value='hero-quote'
               >
                 "La educación es lo que queda después de que uno olvida lo que
-                ha aprendido en la escuela"
-                <cite className='style-p' translate='no'>
-                  {' '}
+                ha aprendido en la escuela" <br />
+                <cite className='' translate='no'>
                   ~ Albert Einstein
                 </cite>
               </blockquote>

@@ -1,5 +1,7 @@
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -21,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <motion.div variants={fadeIn('up', 'spring', 0.5, 0.75)}>
       <section id='contact'>
         <div className='text-center pb-4'>
           <h2
@@ -56,8 +58,8 @@ const Contact = () => {
                         maxLength={20}
                       />
                       <p data-section='contact' data-value='contact-nameError'>
-                        Name must be from 2 to 20 digits and can only contain
-                        letters
+                        El nombre debe tener de 2 a 20 caracteres y solo puede
+                        contener letras
                       </p>
                       <label
                         htmlFor='nombre'
@@ -81,8 +83,8 @@ const Contact = () => {
                         data-section='contact'
                         data-value='contact-lastnameError'
                       >
-                        Last name must be from 2 to 20 digits and can only
-                        contain letters
+                        El apellido debe tener de 2 a 20 caracteres y solo puede
+                        contener letras
                       </p>
                       <label
                         htmlFor='apellido'
@@ -106,8 +108,8 @@ const Contact = () => {
                         pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
                       />
                       <p data-section='contact' data-value='contact-emailError'>
-                        Email can only contain letters, numbers, points, hyphens
-                        and underscores
+                        El correo electrónico solo puede contener letras,
+                        números, puntos, guiones y guiones bajos
                       </p>
                       <label
                         htmlFor='email'
@@ -128,15 +130,15 @@ const Contact = () => {
                         maxLength={12}
                       />
                       <p data-section='contact' data-value='contact-emailError'>
-                        Email can only contain letters, numbers, points, hyphens
-                        and underscores
+                        El Telefono debe tener de 7 a 12 caracteres y solo puede
+                        contener numeros
                       </p>
                       <label
                         htmlFor='phone'
                         data-section='contact'
                         data-value='contact-phone'
                       >
-                        Numero de telefono
+                        Telefono
                       </label>
                     </div>
                   </div>
@@ -147,7 +149,7 @@ const Contact = () => {
                         name='message'
                         id='message'
                         maxLength={255}
-                        placeholder=''
+                        placeholder='mensaje...'
                       ></textarea>
                     </div>
                   </div>
@@ -156,7 +158,7 @@ const Contact = () => {
                     <div className='inputBox'>
                       <button
                         type='submit'
-                        className='btn style-p'
+                        className='btn'
                         style={{
                           '--btn-bgc': '#050816',
                           '--btn-clr': '#e1148b',
@@ -177,7 +179,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </>
+    </motion.div>
   );
 };
 

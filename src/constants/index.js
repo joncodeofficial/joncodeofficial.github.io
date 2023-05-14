@@ -97,7 +97,7 @@ const projects = [
       },
     ],
     image: tudolarVenezuela,
-    source_code_link: 'https://github.com/jonpena/tudolarvenezuela',
+    source_uri: '/tudolarvenezuela',
   },
   {
     name: 'Youtube Clone',
@@ -126,7 +126,7 @@ const projects = [
       },
     ],
     image: youtubeClone,
-    source_code_link: 'https://github.com/jonpena/youtube-clone',
+    source_uri: '/youtube-clone',
   },
   {
     name: 'Old Portfolio',
@@ -160,7 +160,7 @@ const projects = [
       },
     ],
     image: oldPortfolio,
-    source_code_link: 'https://github.com/jonpena/old-portfolio',
+    source_uri: '/old-portfolio',
   },
 ];
 
