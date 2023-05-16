@@ -107,27 +107,39 @@
           transform: rotate(360deg);
         }
       }
-      #home {
-        overflow: hidden;
-      }
 
-      footer#footer {
+      #home {
         width: 100%;
+        overflow: hidden;
         position: absolute;
         bottom: 0;
+      }
+
+      @media screen and (min-width: 48em) {
+        footer#footer .social-container {
+          position: fixed;
+          left: -2.7rem;
+          bottom: 5.5rem;
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+
+      #home #stars:after,
+      #home #stars2:after,
+      #home #stars3:after {
+        top: auto;
       }
     </style>
     <script type="module" crossorigin src="./assets/universe-43289f2e.js"></script>
     <link rel="stylesheet" href="./assets/universe-f2a4e4c6.css">
   </head>
 
-  <body id="home" data-scroll>
-    <!-- E F F E C T   R A I N -->
-    <div className="max-w-7xl">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </div>
+  <body id="home">
+    <!-- E F F E C T   STARS -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 
     <!-- H E A D E R -->
 
@@ -162,7 +174,7 @@
 
     <footer id="footer">
       <div class="footer-container">
-        <div class="social-container border border-white">
+        <div class="social-container">
           <a href="https://www.linkedin.com/in/jonpena" target="_blank">
             <img src="images/icon-linkedin.svg" alt="linkedin icon" />
           </a>
