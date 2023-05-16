@@ -70,7 +70,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>
-          Practicas y Proyectos personales
+          PRÁCTICAS Y PROYECTOS PERSONALES
         </p>
         <h2 className={`${styles.sectionHeadText} font-purple`}>Proyectos</h2>
       </motion.div>

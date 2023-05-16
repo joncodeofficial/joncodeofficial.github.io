@@ -39,7 +39,7 @@ const Contact = () => {
             data-section='contact'
             data-value='contact-h2'
           >
-            Contactame
+            Contáctame
           </h2>
         </div>
 
@@ -138,7 +138,7 @@ const Contact = () => {
                         maxLength={12}
                       />
                       <p data-section='contact' data-value='contact-emailError'>
-                        El Telefono debe tener de 7 a 12 caracteres y solo puede
+                        El Teléfono debe tener de 7 a 12 caracteres y solo puede
                         contener numeros
                       </p>
                       <label
@@ -146,7 +146,7 @@ const Contact = () => {
                         data-section='contact'
                         data-value='contact-phone'
                       >
-                        Telefono
+                        Teléfono
                       </label>
                     </div>
                   </div>

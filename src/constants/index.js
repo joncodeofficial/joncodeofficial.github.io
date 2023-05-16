@@ -10,7 +10,7 @@ import {
 export const navLinks = [
   {
     id: 'about',
-    title: 'Sobre mi',
+    title: 'Sobre mí',
   },
   {
     id: 'experience',
@@ -48,10 +48,10 @@ const experiences = [
     iconBg: '#1D1836',
     date: 'Julio 2022 - Enero 2023',
     points: [
-      'Trabaje con angular.js y tecnología .NET para crear y mantener aplicaciones y hacerlas eficientes y escalables.',
+      'Trabaje con angular.js y tecnología .NET para crear y mantener aplicaciones y también hacerlas eficientes y escalables.',
       'Colaborar y comunicar con los diferentes grupos de desarrolladores para terminar las tareas en el tiempo indicado por los project managers.',
       'Agregue Funcionalidades a un CRM existente dentro de un software de gestión de supermercados.',
-      'Personalice y optimize el CMS nopCommerce utilizado para crear el Ecommece de la empresa.',
+      'Personalice y optimicé el CMS nopCommerce utilizado para crear el E-commerce de la empresa.',
     ],
   },
   {
@@ -61,9 +61,9 @@ const experiences = [
     iconBg: '#1D1836',
     date: 'Junio 2021 - Junio 2022',
     points: [
-      'Desarrollar Landing pages de ventas para aunmentar un embudo de ventas.',
+      'Desarrollar Landing pages de ventas para aumentar un embudo de ventas.',
       'Maquetar las pages con el objetivo de captar la atención y el interés de potenciales compradores.',
-      'Tener muy en cuenta el SEO onpage y offpage para el buen posicinamiento de las paginas.',
+      'Tener muy en cuenta el SEO onpage y offpage para el buen posicionamiento de las páginas.',
       'Implementar un Diseño Responsive y Fluid Design.',
     ],
   },
