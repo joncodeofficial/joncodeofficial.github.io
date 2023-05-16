@@ -160,7 +160,7 @@ const projects = [
       },
     ],
     image: oldPortfolio,
-    source_uri: '/old-portfolio',
+    source_uri: '/portfolio',
   },
 ];
 

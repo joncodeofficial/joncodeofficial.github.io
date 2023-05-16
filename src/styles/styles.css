@@ -97,15 +97,6 @@
   );
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
   background-color: var(--primary-color);
   overflow-x: hidden;
@@ -129,6 +120,14 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: var(--blue-1);
   border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /**  H E A D E R  **/

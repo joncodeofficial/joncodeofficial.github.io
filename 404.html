@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- METAS PROGRESSIVE WEB APP -->
+    <meta name="theme-color" content="#0a0a26" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar" content="#0a0a26" />
+    <link rel="apple-touch-icon" href="./images/favicon-128x128.png" />
+    <link rel="apple-touch-icon" href="./images/favicon-512x512.png" />
+    <link rel="apple-touch-startup-image" href="./images/favicon-512x512.png" />
+    <link rel="manifest" href="manifest.json" />
+
+    <title>404 Not Found | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .btn {
+        max-width: 200px;
+        min-width: 150px;
+        width: 100%;
+        position: relative;
+        padding: 1.2rem 1.5rem;
+        margin: 2rem auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--btn-bgc);
+        overflow: hidden;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        transition: box-shadow 0.5s linear;
+      }
+
+      .btn:hover {
+        background: var(--btn-clr);
+        box-shadow: 0 0 10px var(--btn-clr), 0 0 20px var(--btn-clr),
+          0 0 60px var(--btn-clr);
+      }
+
+      .btn::before {
+        content: '';
+        position: absolute;
+        width: 2.25rem;
+        height: 500%;
+        background: var(--btn-clr);
+        background: linear-gradient(
+          to top,
+          var(--blue-1) 50%,
+          var(--purple-1) 50%
+        );
+        transition-duration: 0.3s;
+        animation: animate 5s linear infinite;
+      }
+
+      .btn::after {
+        content: '';
+        position: absolute;
+        width: 98%;
+        height: 92%;
+        background-color: var(--btn-bgc);
+        border-radius: 0.5rem;
+        transition-duration: 0.5s;
+      }
+
+      .btn:hover::before {
+        width: 0;
+      }
+
+      .btn:hover::after {
+        background-color: var(--btn-clr);
+      }
+
+      .btn span {
+        position: relative;
+        z-index: 1;
+        font-size: 1rem;
+        color: #fff;
+        opacity: 0.75;
+        transition: opacity 0.5s linear;
+      }
+
+      .btn:hover span {
+        opacity: 1;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      #home {
+        overflow: hidden;
+      }
+
+      footer#footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body id="home" data-scroll>
+    <!-- E F F E C T   R A I N -->
+    <div className="max-w-7xl">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+
+    <!-- H E A D E R -->
+
+    <header id="header">
+      <div class="header-container">
+        <div class="hero-container">
+          <h1 class="hero-h1" style="font-size: calc(var(--size-5) * 1.2)">
+            ERROR 404
+          </h1>
+
+          <h2
+            class="hero-h2"
+            style="font-size: var(--size-2)"
+            data-section="hero"
+            data-value="err-text"
+          >
+            Oops, Pagina no Encontrada !
+          </h2>
+
+          <a
+            class="btn style-p"
+            href="./"
+            style="--btn-bgc: #0e0e22ff; --btn-clr: #00a2f2"
+          >
+            <span data-section="hero" data-value="back-btn">IR A INICIO</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- F O O T E R -->
+
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="social-container border border-white">
+          <a href="https://www.linkedin.com/in/jonpena" target="_blank">
+            <img src="images/icon-linkedin.svg" alt="linkedin icon" />
+          </a>
+
+          <a href="https://github.com/jonpena" target="_blank">
+            <img src="images/icon-github.svg" alt="github icon" />
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=04121953819&text=Hola%20Jonathan,%20Como%20Estas ?"
+            target="_blank"
+          >
+            <img src="images/icon-whatsapp.svg" alt="whatsapp icon" />
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCjxrf5SMrC0F66MuxvJ7ZWQ"
+            target="_blank"
+          >
+            <img src="images/icon-youtube.svg" alt="youtube icon" />
+          </a>
+        </div>
+
+        <p data-section="footer" data-value="footer-p">
+          Creado con <span>❤️</span> por Jonathan Peña
+        </p>
+      </div>
+    </footer>
+    <script type="module">
+      import './src/styles/styles.css';
+      import './src/styles/universe.css';
+    </script>
+  </body>
+</html>

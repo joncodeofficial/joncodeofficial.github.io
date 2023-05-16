@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import './styles/components.css';
-import './styles/style.css';
+import './styles/styles.css';
 import './styles/universe.css';
 import './styles/tagcloud.css';
 

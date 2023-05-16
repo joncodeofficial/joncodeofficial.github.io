@@ -16,19 +16,17 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <Stars />
-        <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        <Works />
-        <div className='relative z-0'>
-          <Skills />
-          <Contact />
-          <StarsCanvas />
-          <Footer />
-        </div>
+      <Stars />
+      <Navbar />
+      <Hero />
+      <About />
+      <Experience />
+      <Works />
+      <div className='relative z-0'>
+        <Skills />
+        <Contact />
+        <StarsCanvas />
+        <Footer />
       </div>
     </BrowserRouter>
   );
