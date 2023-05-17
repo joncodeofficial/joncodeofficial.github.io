@@ -9,7 +9,7 @@ const Stars = () => {
         data-section='home'
         data-value='send-btn'
       >
-        enviando 😄
+        enviado 😄
       </button>
     </div>
   );
