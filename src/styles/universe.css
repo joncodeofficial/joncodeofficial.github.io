@@ -116,8 +116,8 @@
 }
 
 #stars2 {
-  width: 2px;
-  height: 2px;
+  width: 1.2px;
+  height: 1.2px;
   background: transparent;
   box-shadow: 1982px 876px #fff, 1808px 1383px #fff, 64px 1556px #fff,
     1207px 1280px #fff, 1015px 1988px #fff, 1850px 580px #fff,
@@ -138,8 +138,8 @@
   content: ' ';
   position: absolute;
   top: 2000px;
-  width: 2px;
-  height: 2px;
+  width: 1.2px;
+  height: 1.2px;
   background: transparent;
   box-shadow: 1982px 876px #fff, 1808px 1383px #fff, 64px 1556px #fff,
     1207px 1280px #fff, 1015px 1988px #fff, 1850px 580px #fff,

@@ -35,6 +35,7 @@ const Footer = () => {
               <img src='images/icon-youtube.svg' alt='youtube icon' />
             </a>
           </div>
+          <span className='social-bar'></span>
 
           <p data-section='footer' data-value='footer-p'>
             Creado con <span>❤️</span> por Jonathan Peña

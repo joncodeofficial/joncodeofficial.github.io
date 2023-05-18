@@ -8,11 +8,13 @@ import { logo } from '../assets';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
-  const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true);
 
   useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 100) {
@@ -20,6 +22,12 @@ const Navbar = () => {
       } else {
         setScrolled(false);
       }
+      // Condition to hide Navbar
+      const currentScrollPos = window.pageYOffset;
+      const isScrollingUp = prevScrollPos > currentScrollPos;
+
+      setIsNavVisible(isScrollingUp);
+      prevScrollPos = currentScrollPos;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -30,8 +38,13 @@ const Navbar = () => {
   const handleMobileBtn = () => {
     const $hamburger = document.querySelector('.hamburger');
     const $navbar = document.querySelector('.navbar');
+    // const $body = document.querySelector('html');
+
+    // console.log($body);
+
     $navbar.classList.toggle('active');
     $hamburger.classList.toggle('active');
+    // $body.classList.toggle('hidden');
     setToggle(!toggle);
   };
 
@@ -46,16 +59,17 @@ const Navbar = () => {
       <nav
         className={`${
           styles.paddingX
-        } w-full flex items-center py-4 fixed top-0 z-20 ${
-          scrolled ? 'bg-primary' : 'bg-transparent'
-        }`}
+        } w-full flex items-center fixed top-0 z-20 ${
+          scrolled ? 'bg-[#05081685] backdrop-blur-md' : 'bg-transparent'
+        } ${
+          isNavVisible ? 'sm:translate-y-0' : 'sm:-translate-y-20'
+        } transition-all duration-300`}
       >
         <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
           <Link
             to='/'
             className='flex items-center gap-2'
             onClick={() => {
-              setActive('');
               window.scrollTo(0, 0);
             }}
           >
@@ -68,13 +82,11 @@ const Navbar = () => {
 
           {/* NAVBAR DESKTOP */}
 
-          <ul className='list-none hidden sm:flex flex-row gap-8'>
+          <ul className='list-none hidden sm:flex py-5 flex-row gap-8'>
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className={`${
-                  active === nav.title ? 'text-white' : 'text-secondary'
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                className={`text-secondary hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
@@ -86,7 +98,7 @@ const Navbar = () => {
 
           <div className='sm:hidden'>
             <div className=' navbar-container'>
-              <nav className='navbar'>
+              <div className='navbar'>
                 {navLinks.map((nav, i) => (
                   <a
                     key={nav.id}
@@ -98,7 +110,7 @@ const Navbar = () => {
                     <span>{nav.title}</span>
                   </a>
                 ))}
-              </nav>
+              </div>
 
               <div className='hamburger' onClick={handleMobileBtn}>
                 <span className='hamburger-bar1'></span>

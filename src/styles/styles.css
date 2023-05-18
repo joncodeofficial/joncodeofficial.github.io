@@ -696,9 +696,9 @@ button {
 /**  F O O T E R  **/
 
 #footer {
-  position: relative;
+  /* position: relative; */
   width: 100%;
-  z-index: 30;
+  /* z-index: 0; */
   background-color: var(--secondary-color);
   padding-bottom: 0rem;
 }
@@ -762,6 +762,7 @@ button {
   justify-content: space-between;
   align-items: center;
   font-size: 2rem;
+  z-index: 0;
 }
 
 @media screen and (min-width: 48em) {
@@ -773,12 +774,11 @@ button {
     gap: 1.5rem 0;
   }
 
-  .social-container::before {
-    content: '';
+  .social-bar {
     width: 1px;
-    z-index: -1;
-    height: 75px;
+    height: 68px;
     position: fixed;
+    z-index: -1;
     left: 3.5rem;
     bottom: 0;
     flex-direction: column;
@@ -789,11 +789,11 @@ button {
 
 @media screen and (max-width: 60em) {
   .social-container {
-    left: -4rem;
+    left: -4.5rem;
   }
 
-  .social-container::before {
-    left: 2.2rem;
+  .social-bar {
+    left: 1.7rem;
   }
 }
 

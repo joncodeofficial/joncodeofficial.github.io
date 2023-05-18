@@ -51,7 +51,7 @@ const Skills = () => {
       </h3>
 
       <div className='relative'>
-        <span className='w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 sun-shadow rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></span>
+        <span className='w-16 h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 sun-shadow rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></span>
         <span className='sphere-container'></span>
       </div>
     </div>
