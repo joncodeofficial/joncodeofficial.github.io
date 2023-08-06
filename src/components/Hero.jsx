@@ -40,7 +40,7 @@ const Hero = () => {
               >
                 {/* <div> */}
 
-                <span className='flex items-center gap-x-3'>
+                <span className='flex items-center gap-x-2'>
                   <img width={22} height={22} src='images/pdf.svg' alt='PDF' />
                   <span>RESUMEN</span>
                 </span>
