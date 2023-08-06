@@ -696,9 +696,7 @@ button {
 /**  F O O T E R  **/
 
 #footer {
-  /* position: relative; */
   width: 100%;
-  /* z-index: 0; */
   background-color: var(--secondary-color);
   padding-bottom: 0rem;
 }
@@ -737,8 +735,9 @@ button {
 }
 
 .footer-container p span {
-  font-size: 0.8rem;
   position: relative;
+  top: 0.15rem;
+  font-size: 0.8rem;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   animation: heart-pulse 1s infinite steps(4);
@@ -768,7 +767,7 @@ button {
 @media screen and (min-width: 48em) {
   .social-container {
     position: fixed;
-    left: -2.7rem;
+    right: -2.7rem;
     bottom: 5.5rem;
     flex-direction: column;
     gap: 1.5rem 0;
@@ -779,7 +778,7 @@ button {
     height: 68px;
     position: fixed;
     z-index: -1;
-    left: 3.5rem;
+    right: 3.5rem;
     bottom: 0;
     flex-direction: column;
     gap: 1.75rem 0;
@@ -789,11 +788,11 @@ button {
 
 @media screen and (max-width: 60em) {
   .social-container {
-    left: -4.5rem;
+    right: -4.5rem;
   }
 
   .social-bar {
-    left: 1.7rem;
+    right: 1.7rem;
   }
 }
 

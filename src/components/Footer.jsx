@@ -38,7 +38,7 @@ const Footer = () => {
           <span className='social-bar'></span>
 
           <p data-section='footer' data-value='footer-p'>
-            Creado con <span>❤️</span> por Jonathan Peña
+            Creado con <span>❤️</span> usando React.js
           </p>
         </div>
       </footer>

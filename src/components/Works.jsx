@@ -18,10 +18,10 @@ const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
           scale: 1,
           speed: 500,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full transition-transform'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[340px] w-full transition-transform'
       >
         <div
-          className='relative w-full h-[230px]'
+          className='relative w-full h-[200px]'
           onClick={() => window.open(domain_uri + source_uri, '_blank')}
         >
           <img

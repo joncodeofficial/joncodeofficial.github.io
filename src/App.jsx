@@ -7,8 +7,8 @@ import {
   Hero,
   Navbar,
   Works,
-  StarsCanvas,
   Stars,
+  Universe,
   Skills,
   Footer,
 } from './components';
@@ -16,7 +16,7 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <Stars />
+      <Universe />
       <Navbar />
       <Hero />
       <About />
@@ -25,7 +25,7 @@ const App = () => {
       <div className='relative z-0'>
         <Skills />
         <Contact />
-        <StarsCanvas />
+        <Stars />
         <Footer />
       </div>
     </BrowserRouter>

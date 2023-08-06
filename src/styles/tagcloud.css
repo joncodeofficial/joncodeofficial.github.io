@@ -80,3 +80,7 @@
 .tagcloud--item:nth-child(16) {
   background-image: url('../images/figma.webp');
 }
+
+.tagcloud--item:nth-child(17) {
+  background-image: url('../images/jest.svg');
+}

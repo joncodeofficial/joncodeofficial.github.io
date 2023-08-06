@@ -13,7 +13,7 @@ const options = {
 
 const Skills = () => {
   useEffect(() => {
-    window.TagCloud('.sphere-container', Array(16).fill(''), options);
+    window.TagCloud('.sphere-container', Array(17).fill(''), options);
   }, []);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Skills = () => {
       const $sphere = document.querySelector('.sphere-container');
       options.radius = mq.matches ? window.innerWidth * 0.32 : 210;
       $sphere.removeChild($sphere.childNodes[0]);
-      window.TagCloud('.sphere-container', Array(16).fill(''), options);
+      window.TagCloud('.sphere-container', Array(17).fill(''), options);
       document.querySelector('.tagcloud').style.width = '100%';
     };
 

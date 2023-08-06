@@ -5,6 +5,7 @@ import {
   tudolarVenezuela,
   youtubeClone,
   oldPortfolio,
+  holoxr,
 } from '../assets';
 
 export const navLinks = [
@@ -29,7 +30,19 @@ export const navLinks = [
 //
 const experiences = [
   {
-    title: 'Next.js Developer',
+    title: 'Frontend | React Developer',
+    company_name: 'HOLO XR',
+    icon: holoxr,
+    iconBg: '#880811',
+    date: 'Junio 2023 - Presente 2023',
+    points: [
+      'Desarrollo y Reconstrucción de un modulo de la  aplicaciones web usando React.js y Redux Toolkit.',
+      'Agregar Funcionalidades de drag and drog y Performance de la app',
+      'Implementar un diseño responsivo y garantizar la compatibilidad entre navegadores.',
+    ],
+  },
+  {
+    title: 'Frontend | React Developer',
     company_name: 'Seven Suite',
     icon: sevenSuite,
     iconBg: '#880811',
@@ -42,7 +55,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Developer',
+    title: 'FullStack | .NET Developer',
     company_name: 'Norkut',
     icon: norkut,
     iconBg: '#1D1836',
@@ -55,7 +68,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Frontend Developer',
+    title: 'Frontend | React Developer',
     company_name: 'Nanotekcs',
     icon: nanotecks,
     iconBg: '#1D1836',

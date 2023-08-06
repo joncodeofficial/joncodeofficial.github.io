@@ -38,7 +38,18 @@ const Hero = () => {
                 className='btn style-p'
                 style={{ '--btn-bgc': '#0e0e22ff', '--btn-clr': '#00a2f2' }}
               >
-                <span>RESUMEN</span>
+                {/* <div> */}
+
+                <span className='flex items-center gap-x-3'>
+                  <img
+                    width={22}
+                    height={22}
+                    src='../../public/images/pdf.svg'
+                    alt='PDF'
+                  />
+                  <span>RESUMEN</span>
+                </span>
+                {/* </div> */}
               </Link>
             </div>
           </div>
