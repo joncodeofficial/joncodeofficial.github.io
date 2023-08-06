@@ -7,7 +7,7 @@ import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-import { domain_uri, github_uri } from '../config';
+import { DOMAIN_URI, GITHUB_URI } from '../config';
 
 const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
   return (
@@ -22,7 +22,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
       >
         <div
           className='relative w-full h-[200px]'
-          onClick={() => window.open(domain_uri + source_uri, '_blank')}
+          onClick={() => window.open(DOMAIN_URI + source_uri, '_blank')}
         >
           <img
             src={image}
@@ -35,7 +35,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
           <div className='flex justify-between items-center'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <div
-              onClick={() => window.open(github_uri + source_uri, '_blank')}
+              onClick={() => window.open(GITHUB_URI + source_uri, '_blank')}
               className='black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer mr-2'
             >
               <img
