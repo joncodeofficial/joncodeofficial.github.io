@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
 
   useEffect(() => {
-    let prevScrollPos = window.pageYOffset;
+    let prevScrollPos = window.scrollY;
 
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -23,7 +23,7 @@ const Navbar = () => {
         setScrolled(false);
       }
       // Condition to hide Navbar
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
       const isScrollingUp = prevScrollPos > currentScrollPos;
 
       setIsNavVisible(isScrollingUp);
@@ -38,13 +38,9 @@ const Navbar = () => {
   const handleMobileBtn = () => {
     const $hamburger = document.querySelector('.hamburger');
     const $navbar = document.querySelector('.navbar');
-    // const $body = document.querySelector('html');
-
-    // console.log($body);
 
     $navbar.classList.toggle('active');
     $hamburger.classList.toggle('active');
-    // $body.classList.toggle('hidden');
     setToggle(!toggle);
   };
 
@@ -68,12 +64,16 @@ const Navbar = () => {
         <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
           <Link
             to='/'
-            className='flex items-center gap-2'
+            className='flex items-center gap-2 group'
             onClick={() => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt='logo' className='w-10 h-10 object-contain' />
+            <img
+              src={logo}
+              alt='logo'
+              className='group-hover:rotate-[360deg] transition-transform duration-500 w-10 h-10 object-contain'
+            />
             <p className='text-white hidden lg:flex text-[18px] font-bold cursor-pointer'>
               Jonathan &nbsp;
               <span className='sm:block hidden'> | Fullstack Dev</span>

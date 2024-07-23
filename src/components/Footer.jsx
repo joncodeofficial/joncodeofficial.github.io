@@ -22,7 +22,7 @@ const Footer = () => {
             </a>
 
             <a
-              href='https://api.whatsapp.com/send?phone=04121953819&text=Hola%20Jonathan,%20Como%20Estas ?'
+              href='https://api.whatsapp.com/send?phone=+34614374632&text=Hi%20Jonathan'
               target='_blank'
             >
               <img src='images/icon-whatsapp.svg' alt='whatsapp icon' />
@@ -38,7 +38,15 @@ const Footer = () => {
           <span className='social-bar'></span>
 
           <p data-section='footer' data-value='footer-p'>
-            Creado con <span>❤️</span> usando React.js
+            Creado con{' '}
+            <span>
+              <img
+                src='https://icons.iconarchive.com/icons/designbolts/free-valentine-heart/32/Heart-icon.png'
+                width='12'
+                height='12'
+              />
+            </span>
+            usando React.js
           </p>
         </div>
       </footer>

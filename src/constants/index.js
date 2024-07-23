@@ -34,11 +34,11 @@ const experiences = [
     company_name: 'HOLO XR',
     icon: holoxr,
     iconBg: '#880811',
-    date: 'Junio 2023 - Presente 2023',
+    date: 'Junio 2023 - Presente',
     points: [
-      'Desarrollo y Reconstrucción de un modulo de la  aplicaciones web usando React.js y Redux Toolkit.',
-      'Agregar Funcionalidades de drag and drog y Performance de la app',
-      'Implementar un diseño responsivo y garantizar la compatibilidad entre navegadores.',
+      'Desarrollo y Reconstrucción de una grafica Gantt usando React para llevar un control de los diferentes proyectos realizados.',
+      'Desarrollo de un visualizador de Modelos BIM de estructuras y edificios.',
+      'Desarrollo de un modulo interactico para llevar la toma de avances de una infraestructura.',
     ],
   },
   {
@@ -110,7 +110,7 @@ const projects = [
       },
     ],
     image: tudolarVenezuela,
-    source_uri: '/tudolarvenezuela',
+    source_uri: '/tudolarvenezuela/',
   },
   {
     name: 'Youtube Clone',

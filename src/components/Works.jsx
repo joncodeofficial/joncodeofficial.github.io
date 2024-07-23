@@ -67,7 +67,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
 
 const Works = () => {
   return (
-    <>
+    <section className='sm:px-16 px-6 sm:py-12 py-8'>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>
           PRÁCTICAS Y PROYECTOS PERSONALES
@@ -93,7 +93,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

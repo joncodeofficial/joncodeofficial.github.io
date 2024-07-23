@@ -4,8 +4,8 @@ import { SectionWrapper } from '../hoc';
 const Hero = () => {
   return (
     <>
-      <section className={`relative w-full mx-auto`}>
-        <header id='header'>
+      <section id='header' className={`relative w-full mx-auto`}>
+        <header>
           <div className='header-container mt-14'>
             <div className='hero-container'>
               <h1
@@ -38,13 +38,10 @@ const Hero = () => {
                 className='btn style-p'
                 style={{ '--btn-bgc': '#0e0e22ff', '--btn-clr': '#00a2f2' }}
               >
-                {/* <div> */}
-
                 <span className='flex items-center gap-x-2'>
                   <img width={22} height={22} src='images/pdf.svg' alt='PDF' />
                   <span>RESUMEN</span>
                 </span>
-                {/* </div> */}
               </Link>
             </div>
           </div>

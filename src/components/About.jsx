@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
+import { Fragment } from 'react';
 
 const About = () => {
   return (
-    <>
+    <section className='sm:px-16 px-6 sm:py-12 py-8'>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>INTRODUCCIÓN</p>
+        <p className={styles.sectionSubText}>PRESENTACIÓN</p>
         <h2 className={` font-purple ${styles.sectionHeadText}`}>
           Descripción General
         </h2>
@@ -36,14 +37,13 @@ const About = () => {
           <b className='text-[#eee] font-medium'> Node.js</b> y
           <b className='text-[#eee] font-medium'> Express.js</b>, así como en
           <b className='text-[#eee] font-medium'> Golang</b> con
-          <b className='text-[#eee] font-medium'> Fiber</b>,
-          <b className='text-[#eee] font-medium'> Gin</b> y{' '}
+          <b className='text-[#eee] font-medium'> Fiber</b> o
           <b className='text-[#eee] font-medium'> Mux</b>. Esta diversidad de
           habilidades me permite ser versátil y enfrentar una amplia gama de
           desafíos técnicos.
         </p>
       </motion.div>
-    </>
+    </section>
   );
 };
 
