@@ -20,7 +20,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[18px] max-w-3xl leading-[30px]'
       >
-        <p>
+        <p className='text-pretty'>
           Soy un apasionado desarrollador de software con un enfoque
           especializado en el frontend. Mi experiencia abarca tecnologías como
           <b className='text-[#eee] font-medium'> JavaScript</b> y
@@ -32,7 +32,7 @@ const About = () => {
           en el tiempo, lo cual me lleva a considerarme un artesano del
           desarrollo.
         </p>
-        <p className='mt-4'>
+        <p className='mt-4 text-pretty'>
           En el backend, también poseo sólidos conocimientos en
           <b className='text-[#eee] font-medium'> Node.js</b> y
           <b className='text-[#eee] font-medium'> Express.js</b>, así como en

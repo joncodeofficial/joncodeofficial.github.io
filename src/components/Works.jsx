@@ -47,7 +47,9 @@ const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
               />
             </div>
           </div>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <p className='mt-2 text-secondary text-[14px] text-pretty'>
+            {description}
+          </p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -78,7 +80,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-pretty'
         >
           Los siguientes proyectos muestran mis habilidades y experiencia a
           través de ejemplos reales de mi trabajo. Cada proyecto se describe

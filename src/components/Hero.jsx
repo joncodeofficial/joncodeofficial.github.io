@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section id='header' className={`relative w-full mx-auto`}>
         <header>
-          <div className='header-container mt-14'>
+          <div className='header-container mt-32'>
             <div className='hero-container'>
               <h1
                 className='hero-h1 style-p'

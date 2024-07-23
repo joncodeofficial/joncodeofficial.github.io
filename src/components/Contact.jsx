@@ -89,7 +89,7 @@ const Contact = () => {
                           name='message'
                           id='message'
                           maxLength={255}
-                          placeholder='Escribe tu mensaje...'
+                          placeholder='Escribe tu mensaje'
                         ></textarea>
                       </div>
                     </div>
