@@ -32,7 +32,7 @@ const Hero = () => {
               </blockquote>
 
               <a
-                to='https://jonpena.github.io/CV'
+                href='https://jonpena.github.io/CV'
                 target='_blank'
                 className='btn style-p'
                 style={{ '--btn-bgc': '#0e0e22ff', '--btn-clr': '#00a2f2' }}
