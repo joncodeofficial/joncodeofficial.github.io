@@ -21,10 +21,6 @@ export const navLinks = [
     id: 'work',
     title: 'Proyectos',
   },
-  {
-    id: 'contact',
-    title: 'Contacto',
-  },
 ];
 
 //

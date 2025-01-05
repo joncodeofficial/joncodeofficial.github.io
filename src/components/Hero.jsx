@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { SectionWrapper } from '../hoc';
 
 const Hero = () => {
@@ -32,8 +31,8 @@ const Hero = () => {
                 </cite>
               </blockquote>
 
-              <Link
-                to='./CV.pdf'
+              <a
+                to='https://jonpena.github.io/CV'
                 target='_blank'
                 className='btn style-p'
                 style={{ '--btn-bgc': '#0e0e22ff', '--btn-clr': '#00a2f2' }}
@@ -42,7 +41,7 @@ const Hero = () => {
                   <img width={22} height={22} src='images/pdf.svg' alt='PDF' />
                   <span>RESUMEN</span>
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </header>
