@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { styles } from '../styles';
+import { useRef } from 'react';
 
 const options = {
   maxSpeed: 'normal',
@@ -12,33 +13,14 @@ const options = {
 };
 
 const Skills = () => {
-  useEffect(() => {
-    window.TagCloud('.sphere-container', Array(17).fill(''), options);
-  }, []);
+  const initialized = useRef(true);
 
   useEffect(() => {
-    const handleResize = (mq = matchMedia('(min-width: 48em)'), options) => {
-      const $sphere = document.querySelector('.sphere-container');
-      options.radius = mq.matches ? window.innerWidth * 0.32 : 210;
-      $sphere.removeChild($sphere.childNodes[0]);
+    if (initialized.current) {
       window.TagCloud('.sphere-container', Array(17).fill(''), options);
-      document.querySelector('.tagcloud').style.width = '100%';
-    };
-
-    // Suscribirse al evento de cambio de tamaño de la ventana
-    window.addEventListener(
-      'resize',
-      handleResize(matchMedia('(min-width: 48em)'), options)
-    );
-
-    // Limpiar el efecto cuando el componente se desmonte
-    return () => {
-      window.removeEventListener(
-        'resize',
-        handleResize(matchMedia('(min-width: 48em)'), options)
-      );
-    };
-  }, [window.innerWidth]);
+      initialized.current = false;
+    }
+  }, []);
 
   return (
     <div className='relative bottom-14 pt-14'>

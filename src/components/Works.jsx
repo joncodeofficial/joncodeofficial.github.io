@@ -9,7 +9,15 @@ import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { DOMAIN_URI, GITHUB_URI } from '../config';
 
-const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_uri,
+  domain,
+}) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
@@ -18,11 +26,12 @@ const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
           scale: 1,
           speed: 500,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[340px] w-full transition-transform'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[340px] w-full 
+        h-full max-h-[472px] transition-transform flex flex-col justify-between'
       >
         <div
-          className='relative w-full h-[200px]'
-          onClick={() => window.open(DOMAIN_URI + source_uri, '_blank')}
+          className='relative w-full min-h-[200px]'
+          onClick={() => window.open(domain, '_blank')}
         >
           <img
             src={image}
@@ -36,13 +45,11 @@ const ProjectCard = ({ index, name, description, tags, image, source_uri }) => {
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <div
               onClick={() => window.open(GITHUB_URI + source_uri, '_blank')}
-              className='black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer mr-2'
+              className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer mr-2'
             >
               <img
                 src={github}
                 alt='source code'
-                width={24}
-                height={24}
                 className='w-full h-auto object-contain aspect-square'
               />
             </div>
@@ -76,19 +83,6 @@ const Works = () => {
         </p>
         <h2 className={`${styles.sectionHeadText} font-purple`}>Proyectos</h2>
       </motion.div>
-
-      <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-pretty'
-        >
-          Los siguientes proyectos muestran mis habilidades y experiencia a
-          través de ejemplos reales de mi trabajo. Cada proyecto se describe
-          brevemente con enlaces a repositorios de código y demostraciones.
-          Estos Reflejan mi capacidad para resolver problemas, trabajar con
-          diferentes tecnologías y administrar proyectos de manera efectiva.
-        </motion.p>
-      </div>
 
       <div className='mt-20 flex flex-wrap justify-center gap-8'>
         {projects.map((project, index) => (

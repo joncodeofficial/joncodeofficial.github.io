@@ -7,7 +7,7 @@ import norkut from './company/norkut.webp';
 import nanotecks from './company/nanotecks.webp';
 
 import tudolarVenezuela from './works/tudolarvenezuela.webp';
-import youtubeClone from './works/youtube-clone.webp';
+import taskmotion from './works/taskmotion.webp';
 import oldPortfolio from './works/oldPortolio.webp';
 
 export {
@@ -18,6 +18,6 @@ export {
   norkut,
   nanotecks,
   tudolarVenezuela,
-  youtubeClone,
+  taskmotion,
   oldPortfolio,
 };
