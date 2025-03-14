@@ -1,5 +1,4 @@
 import {
-  About,
   Experience,
   Hero,
   Navbar,
@@ -16,7 +15,6 @@ const App = () => {
       <Universe />
       <Navbar />
       <Hero />
-      <About />
       <Experience />
       <Works />
       <div className='relative z-0'>
