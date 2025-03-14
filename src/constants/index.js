@@ -3,16 +3,13 @@ import {
   norkut,
   nanotecks,
   tudolarVenezuela,
-  youtubeClone,
+  taskmotion,
   oldPortfolio,
   holoxr,
 } from '../assets';
+import { DOMAIN_URI } from '../config';
 
 export const navLinks = [
-  {
-    id: 'about',
-    title: 'Sobre mí',
-  },
   {
     id: 'experience',
     title: 'Experiencias',
@@ -82,7 +79,7 @@ const projects = [
   {
     name: 'TudolarVenezuela',
     description:
-      'Esta app utiliza React en el frontend y AWS Lambda en el backend. El backend consta de dos funciones Lambda: una realiza web scraping y almacena los datos en una base de datos, mientras que la otra actúa como una API para obtener los precios de la base de datos. Además, se ha programado un cron job para que cada 6 horas automáticamente se actualicen los precios.',
+      'Este clon de YouTube utiliza React, Tailwind y MUI en el frontend. Se integra con una API de RapidAPI para obtener videos y datos, replicando la experiencia de YouTube.',
     tags: [
       {
         name: 'React',
@@ -106,12 +103,13 @@ const projects = [
       },
     ],
     image: tudolarVenezuela,
+    domain: DOMAIN_URI + '/tudolarvenezuela/',
     source_uri: '/tudolarvenezuela/',
   },
   {
-    name: 'Youtube Clone',
+    name: 'Taskmotion',
     description:
-      'Este un clon de YouTube que utiliza React en el frontend, junto con las bibliotecas de Tailwind y MUI para los estilos y la maquetación. Además, se integra con una API freemium de RapidAPI para obtener videos y datos de YouTube. En resumen, la aplicación es un clon de YouTube desarrollado con React, Tailwind y MUI, que utiliza la API de RapidAPI.',
+      'Este gestor de tareas usa React en el frontend y Node.js con Honojs en el backend. Supabase maneja la base de datos, y Tailwind, Zustand y Chadcn/ui mejoran la UI.',
     tags: [
       {
         name: 'React',
@@ -134,13 +132,14 @@ const projects = [
         color: 'text-orange-500',
       },
     ],
-    image: youtubeClone,
-    source_uri: '/youtube-clone',
+    image: taskmotion,
+    domain: 'https://taskmotion.pages.dev',
+    source_uri: '/taskmotion',
   },
   {
     name: 'Old Portfolio',
     description:
-      'Este es mi antiguo portfolio personal desarrollado utilizando únicamente HTML, CSS y JavaScript, usando vite como entorno de desarrollo y teniendo muy en cuenta el SEO. Es un portfolio con numerosas animaciones, capacidad para varios idiomas y también se trata de una Progressive Web App (PWA). En resumen, se trata de un portfolio vanilla.',
+      'Este es mi antiguo portfolio, desarrollado con HTML, CSS y JavaScript. Usa Vite, es una PWA, admite varios idiomas y está optimizado para SEO.',
     tags: [
       {
         name: 'html',
@@ -169,6 +168,7 @@ const projects = [
       },
     ],
     image: oldPortfolio,
+    domain: DOMAIN_URI + '/portfolio',
     source_uri: '/portfolio',
   },
 ];
