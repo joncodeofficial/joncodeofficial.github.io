@@ -8,8 +8,8 @@ const options = {
   direction: 30,
   keep: true,
   radius: matchMedia('(min-width: 48em)').matches
-    ? window.innerWidth * 0.32
-    : 210,
+    ? window.innerWidth * 0.3
+    : 180,
 };
 
 const Skills = () => {
